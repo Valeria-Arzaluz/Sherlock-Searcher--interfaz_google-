@@ -1,2 +1,3 @@
-# Sherlock-Searcher--interfaz_google-
-Sherlock Searcher, google clone, created with HTML5 and CSS3
+# Sherlock Searcher
+## New searcher, imitates the aesthetics and interface of Google
+### Creadted whit HTML5 and CSS3
