@@ -1,0 +1,212 @@
+body{
+    /*background-color: rgb(219, 188, 188);*/
+    /*Margen predeterminado*/
+    margin: 0;
+    /*Magen para adentro*/
+    padding: 0;
+    /*Tamañao de la fuente*/
+    font-size: 13px;
+    /*Eleccion de la fuente*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*******************************************************************************************************************************************/
+/*********************************************************/
+/**********************************/
+/*Navegacion*/
+header{
+    /*background-color: beige;*/
+    /*WIDTH ancho---Height ancho*/
+    width: 100%;
+    height: 60px;
+}
+header nav{
+    /*background-color: rgb(149, 219, 228);*/
+    /*como se puede mover el elemento*/
+    display: flex;
+    justify-content: flex-end;
+}
+header nav .nav-right-section{
+    /*Colocar color a los elemtos nos permite visualizar la seccio que se esta editando-- background-color: blue;*/
+    /*Eliminar las viñetas*/
+    list-style: none;
+    /*Ancho del contenido*/
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*Altura automatica, lo de dentro de la caja*/
+    height: auto;
+}
+nav .nav-right-section a{
+    /*Color de texto*/
+    color: rgb(21, 21, 21);
+    /*linea deabajo de texto*/
+    text-decoration: none;
+    /*margen derecho*/
+    margin-right: 25px;
+}
+nav .nav-right-section .smenu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    /*Contiene a la imagen*/
+    background-size: contain;
+}
+nav .nav-right-section img{
+    /*margin left-margen a la izquierda SOLAMENTE*/
+    margin-left: 20px;
+    /*Redondear imagen*/
+    border-radius: 100px;
+    /*ancho de la imagen*/
+    width: 35px;
+}
+/****************************************************/
+/******************************/
+/******************/
+/*Main*/
+main{
+    text-align: center;
+    margin-top: 150px;
+}
+/*Seccion del logo*/
+main .main-logo{
+    width: 800px;
+    /*background-color: blueviolet;*/
+    margin: 0 auto;
+    margin-bottom: 40px;
+    /* margin: center;*/
+}
+/*Logo de Sherlock*/
+main .main-logo img{
+    height: 95px;
+}
+/*Seccion input*/
+main .main-input{
+    /* background-color: brown;*/
+    /*width-anchura*/
+    width: 550px;
+    /* margenes y centrado*/
+    margin: 0 auto;
+    /*separar input de botones*/
+    margin-bottom: 40px;
+}
+
+/*cajita gris redondeada buscador*/
+main .main-input-container{
+    /* background-color: black*/
+    /*ancho de linea, estilo y color*/
+    border: 1px solid #dfe1e5;
+    border-radius: 30px;
+    width: 525px;
+    /*Mis componenteas sean flexibles y se muevan*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    /*background-color: black;*/
+    height: 40px;
+    width: 430px;
+    /*Quitar el borde negro*/
+    border: none;
+    /*Quitar borde azul a hacer click*/
+    outline: none;
+}
+/*Tarea sombra al pasar el cursor por algun elemento*/
+main .main-input .search-icon{
+    /*Poner una imagen*/
+    background-image: url(https://img2.freepng.es/20180504/xwe/kisspng-magnifying-glass-computer-icons-clip-art-magnify-5aebfc36e40919.5235734015254149669341.jpg);
+    /*Centrar la imagen*/
+    background-position: center;
+    /*Tamaño del icono*/
+    width: 15px;
+    height: 15px;
+    /*Icono contenido */
+    background-size: contain;
+    padding-left: 6%;
+    background-repeat: no-repeat;
+}
+main .main-input .micro-icon{
+    background-image: url(https://cdn-icons-png.flaticon.com/512/25/25682.png);
+    width: 17px;
+    height: 17px;
+    /*Icono contenido en el espacio*/
+    background-size: contain;
+    background-position: center;
+    padding-left: 1%;
+    background-repeat: no-repeat;
+    
+}
+main .main-input .cam-icon{
+    background-image: url(https://w7.pngwing.com/pngs/603/534/png-transparent-graphic-film-camera-graphy-computer-icons-graph-rectangle-black-desktop-wallpaper.png);
+    width: 17px;
+    height: 17px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 6%;
+}
+
+main .main-buttons{
+    /*background-color: black;*/
+    width: 550px;
+    /*Vertical/Horizontal*/
+    margin: 0 auto;
+}
+main .main-buttons div{
+    /*Alinear elementos en la misma linea*/
+    display: inline-block;
+}
+main .main-buttons button{
+    border: 0px;
+    height: 35px;
+    background-color: rgb(228, 226, 226);
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 4px;
+    margin-right: 20px;
+    padding: 0 15px;
+}
+/*Nos permite agregarle diseño al poner cursor sobre elemento*/
+main .main-input-container:hover{
+    box-shadow: 0 0 5px #20212447;
+}
+main .main-buttons button:hover{
+    color: #202124;
+    /*ancho de linea-estilo de linea-color*/
+    border: 1px solid #dadce0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
+footer{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 12px;
+    background-color: #cebbbb;
+    border-top: 1px solid #f6f6f6;
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left:0;
+}
+
+.footer-left {
+    justify-self: left;
+}
+
+.footer-right {
+    justify-self: right;
+}
+
+footer ul li a {
+    margin: 10px;
+    color: black;
+}
